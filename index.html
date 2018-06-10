@@ -1,1 +1,72 @@
-hi
+<html>
+  <head>
+    <title>Todo App</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+      <style>
+      #container {
+          text-align: center;
+          text-decoration-color: aqua;
+          border: 2px solid powderblue;
+          color: black;
+    font-family: cursive;
+    background-color: gray;
+    font-size: 100%; 
+    padding: 50px;
+  display:block;
+  width: 600px;
+  margin: 90px auto 0;
+}
+          #h {
+              text-align: center;
+              font-size: 500%;
+              color: gray;
+              font-family: sans-serif;
+              margin: 20px auto 0;
+          }
+          #g {
+              background-color: skyblue;
+          }
+          #c {
+              background-color: black;
+              width:600px;
+              
+          }
+          #incomplete-tasks {
+              background-color: black;
+              width:600px;
+          }
+          #completed-tasks {
+              background-color: black;
+              width:600px;
+          }
+      </style>
+  </head>
+  <body id="g"><h1 id="h">TODO APP</h1>
+    <div id="container" >
+      <p id="c">
+        <label for="new-task" style="color:white">Add Item</label><input id="new-task" type="text"><button style="color:black" "background-color: black">Add</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks" style="color:white">
+        <li class="editMode">
+            <input type="checkbox"><label>upload to github</label>
+            <input type="text">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button></li>
+        
+         
+        
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed-tasks" style="color:white">
+        <li><input type="checkbox" checked><label>make a todo app</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
